@@ -14,13 +14,17 @@
 </head>
 <body>
 
+    <script type="text/javascript">var submitted=false</script>
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){
+        window.location='confirmation/confirmation.html';}"></iframe>
+
     <div class="container">
         <div class="title-header">
             <div class="title">Get a Quotation</div>
         </div>
 
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScrszqxyItdWWd3qf71yiVcVfNKh8DAGyaI2r4DRMcjJSGoXg/formResponse" method="post">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScrszqxyItdWWd3qf71yiVcVfNKh8DAGyaI2r4DRMcjJSGoXg/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
 
 
             <div class="input-group">
